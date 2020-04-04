@@ -1,0 +1,190 @@
+/*.rgba-primary-0 { color: rgba(  2,  2, 10,1) }	/* Main Primary color 
+.rgba-primary-1 { color: rgba(167,164,255,1) } -- morado claro
+.rgba-primary-2 { color: rgba(  3,  2, 31,1) } -- azul oscuro (este sera el color de informacion)
+.rgba-primary-3 { color: rgba(  4,  2, 64,1) } -- azul rey
+.rgba-primary-4 { color: rgba(  7,  2,125,1) } --azul vivo */
+@font-face {
+	font-family: 'titulos';
+	src: url('data/titulosharry.ttf')
+	format('truetype');}
+
+@font-face {
+	font-family: 'parrafos';
+	src: url('data/coronos.otf')
+	format('opentype');}
+
+body{
+	margin: 0px;
+	background-color: black;
+	color: white;
+	font-family: 'parrafos';
+	letter-spacing: 5px;
+	/*min-width: 850px;*/
+}
+#titulo{
+	background-image: url('data/titulo.jpg');
+	background-position: center ;
+	background-size: 100% 35%;
+	background-attachment: fixed;
+}
+
+nav {
+	text-align: center;
+	margin: auto;
+	
+}
+ul{
+	padding: 2px;
+	list-style: none;
+	text-align: center;
+	margin: auto;
+	font-family: 'parrafos';
+}
+#nav li {
+	display: inline;
+	margin: 0px 20px;
+	position: relative;
+	padding: 0px 5px;
+	font-size: 25px;
+	color: gray;
+	
+}
+
+#nav li:hover {
+	color: white;
+	text-shadow: 2px 2px 1px aliceblue;
+}
+
+.subsections {
+	display: none;
+	position: absolute;
+	list-style: square;
+	z-index: 1;
+	top: 32px;
+	left: -20px;
+	padding: 10px;
+	font-family: inherit;
+	text-align: left;
+	background-color: rgba(167,164,255,0.9);
+	box-shadow: 2px 2px 1px black;
+	color: black;
+	text-shadow: none;
+	font-size: 18px;
+}
+
+.subsection_l:hover {
+	color: white;
+	text-shadow: 2px 2px 1px blue;
+
+}
+#indice {
+	width: 95%;
+	margin: inherit;
+	padding: 0px 10px;
+	margin: auto;
+	border-radius: 60px / 40px;
+	
+	
+}
+#root {
+	width: 90%;
+	height: 180px;
+	margin: auto;
+	padding: 0px 10px;
+	overflow: hidden;
+	
+}
+
+#root li {
+	height: 160px;
+	width:110px;
+	display: inline-block;
+	list-style: none;
+	padding: 0px;
+	margin: 10px 15px;
+	position: relative;
+	
+}
+.indice{
+	/*aqui van x caracteristica de las imagenes*/
+	position: relative;
+	
+	border-radius: 20px;
+	border-style: groove;
+	box-shadow: 10px 10px 2px black;
+}
+.indice:hover {
+	width: 105%;
+	height: 105%;
+	display: inline-block;
+	margin-top: -10px;
+	border: 2px double ghostwhite;
+	z-index: 1;
+}
+.nombres {
+	position: relative;
+	margin: -50px auto;
+	background:rgba(0,0,0,0.3);
+
+}
+
+
+/*Estos son los botone de sliders*/
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#left, #right {
+	position: relative;
+	height: 35px;
+	width: 35px;
+	padding: 5px;
+	border-radius: 20px;
+	top: 70px;
+	font-family: fantasy;
+	font-weight: bold;
+	background-color: transparent;
+	color: white;
+	z-index: 1;
+}
+
+#informacion {
+	font-family: 'titulos';
+	font-size: xx-large;
+	background-image: linear-gradient(rgba(159, 226, 255), black);
+	color: aliceblue;
+	margin: 20px 30px;
+	box-shadow: 3px 3px 2px gray;
+}
+
+h1 {
+	color: rgba(0, 100, 250, 1);
+	font-family: 'titulos';
+	font-size: 2.5em;
+	word-break: break-word;
+	margin: 0px 0px;
+	text-shadow: 3px 3px 0px white, 3px 3px 0px white, 4px 4px 0px black, 4px 4px 1px black;
+	/*background-clip: text;*/
+	background-image: url('data/imgfondo.jpg');
+	background-attachment: fixed;
+	background-position: center -280px;
+	padding: 40px 0px;
+	vertical-align: middle;
+	letter-spacing: 20px;
+}
+
+#imagen {
+	top: 40px;
+	box-shadow: 6px 6px 2px black;
+	border: inset 3px;
+	
+
+}
+
+li[id="http://hp-api.herokuapp.com/images/cho.jpg"] {
+	letter-spacing: 8px;
+}

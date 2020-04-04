@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Lovers</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      function ver(x){
+        document.getElementById('subsection'+x).style.display = "inline-block";
+      }
+      function ocultar(x){
+        document.getElementById('subsection'+x).style.display = "none";
+      }
+      
+    </script>
+  </head>
+
+  <body>
+    <div style='width:100%; height:150px' id="titulo"></div> 
+    <nav>
+      <ul id="nav">
+        <li id="inicio" onclick="location.reload()"><a>Inicio</a></li>
+        </li>
+        <li id="vivos"><a>Vivos</a>
+        </li>
+        <li id="estudiantes"><a>Estudiantes</a>
+        </li>
+        <li id="section3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+          <a>Sexo</a>
+          <div id="subsection3" class="subsections">
+            <p id="male" class="subsection_l">Masculinos</p>
+            <p id="female" class="subsection_l">Femeninos</p>
+          </div>
+        </li>
+        <li id="section4" onmouseover="ver(4)" onmouseout="ocultar(4)"><a>Casa</a>
+          <div id="subsection4" class="subsections">
+            <p id="Gryffindor" class="subsection_l">Gryffindor</p>
+            <p id="Slytherin" class="subsection_l">Slytherin</p>
+            <p id="Hufflepuff" class="subsection_l">Hufflepuff</p>
+            <p id="Ravenclaw" class="subsection_l">Ravenclaw</p>
+          </div>
+        </li>
+        <li id="todos"><a>Todos</a>
+        </li> 
+      </ul>
+    </nav><br>
+    <div id="indice">
+      <button id="left"><<</button>
+      <button id="right">>></button>
+      <ul id="root"></ul>
+    </div>
+    <div  id="informacion" >
+      <h1 align="center" id="title">BIENVENIDO</h1>
+      <div  style="margin:20px; width: 300px; height: 420px; float: left; perspective: 400px;">
+        <img src="data/wizard.jpg" width="300px" height="420px" id="imagen">
+      </div>
+      <div id="pInfo"><p style="padding: 0px 30px; text-align: center;" >
+        Harry Potter: Wizards Unite ha sido uno de los juegos más esperado del 2019, ya que está inspirado en el mundo mágico de J. K. Rowling.
+        <br> Los usuarios del juego se convierten en "Brujas o magos" y pueden:</p>
+      <ul style="text-align: center; padding: 10px 30px">
+        <li>Conocer la historia del mundo mágico protegiendo o salvando a los personajes principales de la saga.</li>
+        <li>Recolectar <em>incontratus</em>, que pueden ser artefactos, criaturas, personas, recuerdos o algo imaginable. Estos elementos están repartidos por el mapa.</li>
+        <li>Batallar contra enemigos o en duelos mágicos.</li>
+        <li>Ejercer una profesión como auror, profesor o magizoólogo.</li>
+        <li>Realizar hechizos para encontrar <em>incontratus</em>, crear pociones mágicas, enfrentar enemigos y en duelos mágicos. </li>
+      </ul></div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
